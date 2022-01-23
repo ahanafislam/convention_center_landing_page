@@ -1,0 +1,101 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Poppins:wght@400;600&family=Roboto:wght@700&display=swap');
+
+/* Custom properties */
+:root {
+    /* Colors */
+    --brand-color: #FA804C;
+    --header-text-color: #363958;
+    --regular-text-color: #3E3E3E;
+    --nav-text-color: #3C3C3C;
+
+    /* Font Family */
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-bebas: 'Bebas Neue', cursive;
+    --ff-poppins: 'Poppins', sans-seri;
+    /* Font Weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+/* Common Style */
+body {
+    font-family: var(--ff-poppins);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: var(--fw-regular);
+    color: var(--regular-text-color);
+}
+
+h1 {
+    font-size: 24px;
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-medium);
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h3 {
+    font-weight: var(--fw-bold);
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 17px;
+}
+
+h2, h3 {
+    font-family: var(--ff-bebas);
+}
+
+.btn-north-king {
+    background: white;
+    color: var(--brand-color);
+    font-weight: var(--fw-bold);
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 8px 33px;
+    transition: box-shadow 0.5s ease-out;
+}
+
+.btn-north-king:hover {
+    color: var(--brand-color);
+    box-shadow: 1px 1px 10px rgb(209, 207, 207);
+}
+
+/* Style Header Section */
+
+.navbar-brand{
+    font-family: var(--ff-bebas);
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.carousel-img{
+    width: 1440px;
+    height: 584px;
+}
+
+/*=====================================
+ Media Quarys For Diffrent Size Screen
+=======================================*/
+
+@media only screen and (min-width: 600px) {
+    /* Common Style */
+    h1 {
+        font-size: 48px;
+        line-height: 57px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    /* Style for Header Section */
+}
