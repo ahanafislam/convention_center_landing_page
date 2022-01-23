@@ -5,7 +5,7 @@
 :root {
     /* Colors */
     --brand-color: #FA804C;
-    --header-text-color: #363958;
+    --header-text-color: #2c1b0c;
     --regular-text-color: #3E3E3E;
     --nav-text-color: #3C3C3C;
 
@@ -43,18 +43,32 @@ h2 {
 }
 
 h3 {
-    font-weight: var(--fw-bold);
-    font-size: 24px;
-    line-height: 28px;
+    font-family: var(--ff-roboto);
+    font-size: 28px;
+    line-height: 32px;
     margin-bottom: 17px;
+    font-weight: var(--fw-bold);
+    color: var(--header-text-color);
 }
 
-h2, h3 {
-    font-family: var(--ff-bebas);
+h1,h2{
+    font-family: var(--ff-poppins);
+}
+
+h2{
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+}
+
+.price {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: var(--fw-bold);
+    color: var(--header-text-color);
 }
 
 .btn-north-king {
-    background: white;
+    background: #fceadb;
     color: var(--brand-color);
     font-weight: var(--fw-bold);
     font-size: 16px;
@@ -82,6 +96,37 @@ h2, h3 {
     height: 584px;
 }
 
+/*==========
+ Style Main
+============*/
+.card {
+    border: none;
+    box-shadow: var(--card-shaddow);
+    border-radius: 20px;
+    color: #2c1b0c;
+    width: 232px;
+    height: 387px;
+    font-size: 15px;
+    line-height: 22px;
+
+}
+
+.card-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.card-list li::before {
+    content: url(images/check-circle.png);
+    padding: 0 5px 0 0;
+    vertical-align: -20%;
+    margin-right: 10px;
+}
+
+.plan-btn{
+    border-radius: 24px;
+}
+
 /*=====================================
  Media Quarys For Diffrent Size Screen
 =======================================*/
@@ -94,8 +139,8 @@ h2, h3 {
     }
 
     h2 {
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 38px;
+        line-height: 57px;
     }
     /* Style for Header Section */
 }
