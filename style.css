@@ -5,9 +5,9 @@
 :root {
     /* Colors */
     --brand-color: #FA804C;
+    --background-color: #fceadb;
     --header-text-color: #2c1b0c;
     --regular-text-color: #3E3E3E;
-    --nav-text-color: #3C3C3C;
 
     /* Font Family */
     --ff-roboto: 'Roboto', sans-serif;
@@ -99,6 +99,8 @@ h2{
 /*==========
  Style Main
 ============*/
+
+/* Style Our Package Section */
 .card {
     border: none;
     border-radius: 20px;
@@ -140,6 +142,7 @@ h2{
     background-color: var(--brand-color);
     color: white;
     box-shadow: 0px 11px 21px 8px rgba(250,128,76,0.57);
+    /* margin-top: 5em; */
 }
 
 .hot span {
@@ -147,6 +150,19 @@ h2{
     padding: 8px 11px;
 }
 
+/* Style FAQ Section */
+.accordion-button:not(.collapsed) {
+    color: var(--brand-color);
+    background-color: var(--background-color);
+  }
+
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--background-color);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--background-color);
+}
 /*=====================================
  Media Quarys For Diffrent Size Screen
 =======================================*/
@@ -163,6 +179,11 @@ h2{
         line-height: 57px;
     }
 
-    /* Style for Our Package Section */
-
+    .faq-img {
+        width: 48%;
+    }
+    
+    .faq-content {
+        width: 48%;
+    }
 }
