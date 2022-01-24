@@ -222,11 +222,7 @@ footer {
         line-height: 57px;
     }
 
-    .faq-img {
-        width: 48%;
-    }
-    
-    .faq-content {
+    .faq-img, .faq-content {
         width: 48%;
     }
 }
