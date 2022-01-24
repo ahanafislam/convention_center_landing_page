@@ -142,6 +142,11 @@ h2{
     box-shadow: 0px 11px 21px 8px rgba(250,128,76,0.57);
 }
 
+.hot span {
+    left: 88%;
+    padding: 8px 11px;
+}
+
 /*=====================================
  Media Quarys For Diffrent Size Screen
 =======================================*/
