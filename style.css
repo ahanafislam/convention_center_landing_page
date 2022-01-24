@@ -101,10 +101,8 @@ h2{
 ============*/
 .card {
     border: none;
-    box-shadow: var(--card-shaddow);
     border-radius: 20px;
     color: #2c1b0c;
-    width: 232px;
     height: 387px;
     font-size: 15px;
     line-height: 22px;
@@ -127,6 +125,23 @@ h2{
     border-radius: 24px;
 }
 
+.card-list li::before {
+    content: url(images/check-circle-2.png);
+    padding: 0 5px 0 0;
+    vertical-align: -20%;
+    margin-right: 10px;
+}
+
+.hot {
+    max-width: 320px;
+    height: 450px;
+    position: relative;
+    bottom: 50px;
+    background-color: var(--brand-color);
+    color: white;
+    box-shadow: 0px 11px 21px 8px rgba(250,128,76,0.57);
+}
+
 /*=====================================
  Media Quarys For Diffrent Size Screen
 =======================================*/
@@ -142,5 +157,7 @@ h2{
         font-size: 38px;
         line-height: 57px;
     }
-    /* Style for Header Section */
+
+    /* Style for Our Package Section */
+
 }
